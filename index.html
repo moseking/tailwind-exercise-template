@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-4 bg-blue-500 text-white">
+    <h1 class="text-xl font-bold">MySite</h1>
+
+    <!-- Menu desktop -->
+    <ul class="hidden md:flex gap-6">
+      <li class="hover:underline cursor-pointer">Home</li>
+      <li class="hover:underline cursor-pointer">About</li>
+      <li class="hover:underline cursor-pointer">Contact</li>
+    </ul>
+
+    <!-- Mobile icon -->
+    <div class="md:hidden text-2xl cursor-pointer">☰</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center gap-6 p-6">
+
+    <!-- Image -->
+    <img src="https://media2.dev.to/dynamic/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fi5vke8fu8g8659hjvv22.jpeg"
+         class="rounded-xl w-full md:w-1/2">
+
+    <!-- Content -->
+    <div class="text-center md:text-left md:w-1/2">
+      <h2 class="text-3xl font-bold mb-3">
+        Learn Tailwind CSS
+      </h2>
+
+      <p class="mb-4 text-gray-600">
+        Build responsive layouts quickly with utility-first CSS.
+      </p>
+
+      <button class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+        Get Started
+      </button>
+    </div>
+
+  </section>
+
+</body>
+</html>
